@@ -27,3 +27,10 @@ model Modules {
 
   @@map("modules")
 }
+
+model Categories {
+  id            String    @id       @default(uuid())
+  name          String    @unique
+
+  @@map("categories")
+}
