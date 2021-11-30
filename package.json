@@ -1,0 +1,12 @@
+{
+  "name": "aula01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "3.5.0",
+    "prisma": "3.5.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.4"
+  }
+}
