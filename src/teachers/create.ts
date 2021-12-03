@@ -3,9 +3,9 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 async function main() {
-  const result = await prisma.categories.create({
+  const result = await prisma.teachers.create({
     data: {
-      name: "TI e software",
+      name: "Diego Fernandes",
     },
   });
 
