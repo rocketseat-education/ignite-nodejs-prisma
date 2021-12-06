@@ -14,7 +14,7 @@ model Courses {
   duration    Int
   created_at  DateTime @default(now())
 
-  CoursesModules CoursesModules[]
+  modules CoursesModules[]
   @@map("courses")
 }
 
@@ -24,7 +24,7 @@ model Modules {
   description String
   created_at  DateTime @default(now())
 
-  CoursesModules CoursesModules[]
+  courses CoursesModules[]
   @@map("modules")
 }
 
