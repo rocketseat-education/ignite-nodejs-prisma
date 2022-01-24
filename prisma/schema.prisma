@@ -7,6 +7,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+<<<<<<< HEAD
 model Courses {
   id          String           @id @default(uuid())
   name        String           @unique
@@ -37,4 +38,17 @@ model CoursesModules {
   created_at   DateTime @default(now())
 
   @@map("courses_modules")
+=======
+model authors {
+  id    String  @id
+  name  String  @unique
+  books books[]
+}
+
+model books {
+  id        String  @id
+  name      String  @unique
+  author_id String
+  authors   authors @relation(fields: [author_id], references: [id])
+>>>>>>> database
 }
