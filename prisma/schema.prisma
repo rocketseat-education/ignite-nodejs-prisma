@@ -20,24 +20,11 @@ model Courses {
   @@map("courses")
 }
 
-model Modules {
-  id            String   @id @default(uuid())
-  name          String   @unique
-  description   String
-  created_at    DateTime @default(now())
-  teacher       Teachers @relation(fields: [fk_id_teacher], references: [id])
-  fk_id_teacher String
-
-  teachersId String
-  @@map("modules")
-}
-
 model Teachers {
   id   String @id @default(uuid())
   name String @unique
 
 
-  Modules   Modules[]
   coursesId String?
   Courses   Courses[]
   @@map("teachers")
