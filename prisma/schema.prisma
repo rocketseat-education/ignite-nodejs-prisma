@@ -25,3 +25,11 @@ model Modules {
 
   @@map("modules")
 }
+
+model Teachers {
+  id   String @id @default(uuid())
+  name String @unique
+
+
+  @@map("teachers")
+}
