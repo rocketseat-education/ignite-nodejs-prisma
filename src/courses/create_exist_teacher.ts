@@ -9,13 +9,8 @@ async function main() {
       duration: 500,
       description: "Curso de Java 17",
       teacher: {
-        connectOrCreate: {
-          where: {
-            name: "Daniele Leão Evangelista",
-          },
-          create: {
-            name: "Daniele Leão Evangelista",
-          },
+        connect: {
+          id: "",
         },
       },
     },
