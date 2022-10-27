@@ -10,7 +10,7 @@ async function main() {
       duration: 400,
       teacher: {
         create: {
-          name: 'Rafinha Bastos',
+          name: 'Rodolfinho',
         }
       },
     },
